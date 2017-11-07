@@ -65,7 +65,7 @@ public class Arrows : MonoBehaviour {
 		Instantiate (arrow, positions [rand], rotations[rand1]);
 		CurrArr = GameObject.FindGameObjectWithTag ("arrow");
 		if (rand == 0) {
-			CurrArr.GetComponent<Rigidbody> ().AddForce (Vector3.down*speed);
+			CurrArr.GetComponent<Rigidbody> ().AddForce (Vector3.down*speed);//[eq
 		} 
 		if (rand == 1) {
 			CurrArr.GetComponent<Rigidbody> ().AddForce (Vector3.up*speed);
